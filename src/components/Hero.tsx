@@ -55,10 +55,10 @@ export default function Hero({ onScrollToSection, openEnquiryModal }: HeroProps)
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
-                className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-white leading-tight tracking-tight uppercase"
+                className="font-display font-black text-5xl sm:text-6xl md:text-7xl text-white leading-none tracking-tight uppercase"
               >
                 CHANDA
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-amber-500 font-black">
+                <span className="block text-accent-500 font-black mt-2">
                   WIRE DIES & TOOLS
                 </span>
               </motion.h1>

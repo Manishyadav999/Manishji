@@ -3,13 +3,14 @@ import { Award, ShieldCheck, Settings, Users, ArrowUpRight } from "lucide-react"
 
 export default function AboutUs() {
   return (
-    <section id="about" className="py-24 bg-white relative overflow-hidden">
-      {/* Decorative vector background */}
-      <div className="absolute right-0 bottom-0 w-96 h-96 bg-primary-50/50 rounded-full filter blur-3xl pointer-events-none"></div>
-      <div className="absolute left-0 top-1/4 w-72 h-72 bg-accent-50/40 rounded-full filter blur-3xl pointer-events-none"></div>
+    <section id="about" className="py-20 sm:py-28 bg-slate-50/70 relative overflow-hidden">
+      {/* Decorative dot matrix & glow backgrounds */}
+      <div className="absolute inset-0 bg-[radial-gradient(#cbd5e1_1.2px,transparent_1.2px)] [background-size:20px_20px] opacity-60 pointer-events-none"></div>
+      <div className="absolute right-0 bottom-0 w-96 h-96 bg-primary-100/40 rounded-full filter blur-3xl pointer-events-none"></div>
+      <div className="absolute left-0 top-1/4 w-72 h-72 bg-accent-100/30 rounded-full filter blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           
           {/* Left Column: Story & Management Profiles */}
           <div className="lg:col-span-7 space-y-8">
@@ -69,26 +70,26 @@ export default function AboutUs() {
           </div>
 
           {/* Right Column: Premium Interactive Facility Showcase */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl group border border-slate-100">
-              {/* Main Image */}
-              <img
-                src="/images/machining_facility_1782630078490.jpg"
-                alt="Chanda Dies Manufacturing Workshop"
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
-                referrerPolicy="no-referrer"
-              />
-              
-              {/* Overlay styling for industrial context */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-900/90 via-transparent to-transparent opacity-60"></div>
+          <div className="lg:col-span-5 relative mt-6 lg:mt-0">
+            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl group border border-slate-100 bg-white">
+              {/* Main Image Container */}
+              <div className="relative overflow-hidden aspect-video sm:aspect-auto">
+                <img
+                  src="/images/machining_facility_1782630078490.jpg"
+                  alt="Chanda Dies Manufacturing Workshop"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-900/90 via-transparent to-transparent opacity-60 hidden sm:block"></div>
+              </div>
 
-              {/* In-Image Overlay Card */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-lg text-left">
-                <h4 className="font-display font-bold text-base text-primary-900 uppercase tracking-wide flex items-center gap-2">
+              {/* In-Image Overlay Card - Absolute on sm and above, relative on mobile to prevent squishing */}
+              <div className="sm:absolute sm:bottom-6 sm:left-6 sm:right-6 bg-white sm:bg-white/95 sm:backdrop-blur-md p-5 sm:p-6 rounded-b-2xl sm:rounded-xl border-t sm:border border-slate-100 sm:border-white/20 shadow-lg text-left">
+                <h4 className="font-display font-bold text-sm sm:text-base text-primary-900 uppercase tracking-wide flex items-center gap-2">
                   <Settings className="w-4 h-4 text-accent-500 animate-spin-slow" />
                   <span>State-Of-The-Art Facility</span>
                 </h4>
-                <p className="text-slate-600 text-[11px] mt-1.5 leading-relaxed">
+                <p className="text-slate-600 text-xs sm:text-[11px] mt-2 sm:mt-1.5 leading-relaxed">
                   Located in the premier industrial hub of New Delhi – New Vishwas Nagar, Shahdara. Our plant is equipped with ultra-precise CNC sizing grinders and microscopic analysis labs.
                 </p>
                 <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-3 text-[10px] font-bold text-primary-600 uppercase tracking-wider">
@@ -99,8 +100,8 @@ export default function AboutUs() {
             </div>
 
             {/* Behind-image geometric boxes for depth */}
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary-100 rounded-2xl z-0 -rotate-6 hidden sm:block"></div>
-            <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-accent-100 rounded-2xl z-0 rotate-12 hidden sm:block"></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 sm:w-32 sm:h-32 bg-primary-100/80 rounded-2xl z-0 -rotate-6 hidden sm:block"></div>
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 sm:w-40 sm:h-40 bg-accent-100/80 rounded-2xl z-0 rotate-12 hidden sm:block"></div>
           </div>
 
         </div>
