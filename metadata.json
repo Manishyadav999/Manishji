@@ -1,0 +1,6 @@
+{
+  "name": "Chanda Wire Dies and Tools",
+  "description": "Premium manufacturer and supplier of Wire Drawing Dies, Diamond Wire Dies, PCD Wire Dies, Natural Diamond Dies, Tungsten Carbide Dies, and industrial tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
